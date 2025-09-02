@@ -16,5 +16,8 @@ app.get('/aboutButerin', (request, response, next) =>
 app.get('/works', (request, response, next) => 
     response.sendFile(__dirname + '/views/works.html'));
 
+app.get('/gallery', (request, response, next) => 
+    response.sendFile(__dirname + '/views/gallery.html'));
+
 app.listen('3000', () => console.log("la app escuchando en el puerto 3000"))  //con esto express recibe la peticion 
 //conecta servidor interno HTTP de Node con la app Express
